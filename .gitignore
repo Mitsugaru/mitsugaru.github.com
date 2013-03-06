@@ -1,5 +1,5 @@
 /.settings
 /.classpath
 /.project
-/_site
-/update.sh
+update.sh
+.DS_Store
