@@ -8,7 +8,7 @@ server_port: 4000
 source: .
 destination: ./_site
 plugins: ./_plugins
-exclude: [.git/]
+exclude: [.git/,update.sh]
 
 lsi: true
 paginate: 15
