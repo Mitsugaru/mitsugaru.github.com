@@ -2,7 +2,7 @@ name: "Dakani Labs"
 description: "Jekyll-powered webpage for Dakani"
 url: "dakanilabs.com"
 
-auto: true
+auto: false
 server: false
 server_port: 4000
 source: .
