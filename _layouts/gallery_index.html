@@ -1,6 +1,4 @@
----
-layout: default
----
+{% include header.html %}
 {% for gallery in page.galleries %}
 <div style="width: 35em; text-align: center; padding: 1em 0 4em 0;">
     <a href="{{ gallery['gallery'] }}"> <img style="max-height: 20em; max-width: 20em;"
@@ -12,3 +10,4 @@ layout: default
     {{ gallery["images"] | size }} images
 </div>
 {% endfor %}
+{% include footer.html %}
