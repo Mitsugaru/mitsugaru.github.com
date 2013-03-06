@@ -1,0 +1,18 @@
+name: "Dakani Labs"
+description: "Jekyll-powered webpage for Dakani"
+url: "dakanilabs.com"
+
+auto: true
+server: true
+server_port: 4000
+source: .
+destination: ./_site
+plugins: ./_plugins
+exclude: [.git/]
+
+lsi: true
+paginate: 15
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
