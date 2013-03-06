@@ -3,7 +3,7 @@ description: "Jekyll-powered webpage for Dakani"
 url: "dakanilabs.com"
 
 auto: true
-server: true
+server: false
 server_port: 4000
 source: .
 destination: ./_site
