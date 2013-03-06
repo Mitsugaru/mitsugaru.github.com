@@ -27,6 +27,6 @@ layout: default
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
         <a name="{{ image }}" />
-        <a href="{{ image }} rel="lightbox[{{ gallery["name"] }}]"><img src="thumbs/{{ image }}" /></a>
+        <a href="{{ image }}" rel="lightbox" title="[{{ gallery["name"] }}]"><img src="thumbs/{{ image }}" /></a>
     </div>
 {% endfor %}
