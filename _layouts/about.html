@@ -58,6 +58,41 @@ public class Voila {
 }
 </code>
     </section>
+    
+    <div class="authors">
+    {% for author_id in site.author_ids %}
+    {% assign author = site.authors[author_id] %}
+    <div id="{{ author_id }}" class="author">
+        <hr>
+        <a href="{{ author.web }}">
+            <img
+                class="avatar"
+                src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=150"
+                alt="{{ author.display_name }}"
+                width="150"
+                height="150"
+            >
+        </a>
+        <h2>{{ author.display_name }}, {{ author.job_title }}</h2>
+        <p>{{ author.bio }}</p>
+        <ul>
+            <li>
+                Twitter:
+                <a href="https://twitter.com/#!/{{ author.twitter }}">@{{ author.twitter }}</a>
+            </li>
+            <li>
+                Web:
+                <a href="{{ author.web }}">{{ author.web }}</a>
+            </li>
+            <li>
+                Email:
+                <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+            </li>
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+    
     <div class="row-fluid">
         <div class="span12">{{ content }}</div>
     </div>
