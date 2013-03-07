@@ -30,17 +30,8 @@ layout: default
         <h1>Video Games</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-        <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                        href="#collapseOne"> List </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                    <div class="accordion-inner">Anim pariatur cliche...</div>
-                </div>
-            </div>
-        </div>
+            <button id="vgbutton" type="button" class="btn btn-primary" data-toggle="button">Show List</button>
+ 
     </section>
 
     <section id="dev">
@@ -52,7 +43,10 @@ layout: default
         <div class="span12">{{ content }}</div>
     </div>
     <br />
-    <script type="text/javascript">
-					$("#collapseOne").collapse("hide");
-				</script>
+    <script src="bootbox.min.js"></script>
+    <script>
+        $("#vgbutton").on("click", ".alert", function(e) {
+            bootbox.alert("Hello world!");
+        });
+    </script>
 </body>
