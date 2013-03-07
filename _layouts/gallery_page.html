@@ -31,7 +31,7 @@
 <hr />
 {% for image in page.images %}
 <div class="gallery-image-wrapper">
-    <a name="{{ image }}" /> <a href="{{ image }}" rel="lightbox" title="[{{ gallery["name"] }}]"><img
+    <a href="{{ image }}" rel="lightbox"><img
         src="thumbs/{{ image }}" /></a>
 </div>
 {% endfor %}
