@@ -1,8 +1,7 @@
 <h3>Recent Posts</h3>
 <ul>
     {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li> {% endfor %}
 </ul>
 <h3>Links</h3>
 <div class="accordion" id="services">
@@ -12,7 +11,19 @@
                 href="#collapseOne"> Services </a>
         </div>
         <div id="collapseOne" class="accordion-body collapse in">
-            <div class="accordion-inner">Anim pariatur cliche...</div>
+            <div class="accordion-inner">
+                <ul>
+                    <li><a href="http://dev.dakanilabs.com/" class="m-btn blue big">GitLab
+                            <i class="m-icon-big-swapright m-icon-white"></i>
+                    </a></li>
+                    <li><a href="http://ci.dakanilabs.com/" class="m-btn green big">Jenkins
+                            CI <i class="m-icon-big-swapright m-icon-white"></i>
+                    </a></li>
+                    <li><a href="/archiva" class="m-btn red big">Archiva <i
+                            class="m-icon-big-swapright m-icon-white"></i>
+                    </a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="accordion-group">
