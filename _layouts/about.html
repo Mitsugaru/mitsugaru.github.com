@@ -48,18 +48,23 @@ layout: default
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <code class="prettyprint lang-java linenums:1">
             <a href="voila2"></a>
-            public class Voila { 
-                public static final String VOILA = "Voila";
+public class Voila {
+    public static final String VOILA = "Voila";
 
-                public Voila() { 
-                } 
-            
-                // will not interfere with embedded <a href="#voila2">tags</a>. 
-            }
-        </code>
+    public Voila() { 
+    } 
+    
+    // will not interfere with embedded <a href="#voila2">tags</a>. 
+}
+</code>
     </section>
     <div class="row-fluid">
         <div class="span12">{{ content }}</div>
     </div>
     <br />
+    <script>
+    $(document).ready(function() {
+    	  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+    	});
+				</script>
 </body>
