@@ -4,8 +4,6 @@ layout: about
 ---
 ----
 
-----
-
 #Credits
 
 ### Tools:

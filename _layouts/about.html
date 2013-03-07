@@ -1,6 +1,12 @@
 ---
-layout: page
+layout: default
 ---
+<div class="row-fluid">
+    <div class="span12">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
+<br />
 <body data-spy="scroll" data-target=".subnav" data-offset="100">
 
     <div class="container">
@@ -8,7 +14,7 @@ layout: page
             <ul class="nav nav-pills">
                 <li><a href="#music">Music</a></li>
                 <li><a href="#vg">Video Games</a></li>
-                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#dev">Programming</a></li>
             </ul>
         </div>
     </div>
@@ -21,29 +27,31 @@ layout: page
     </section>
 
     <section id="vg">
-        <h1>Section 2</h1>
+        <h1>Video Games</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div class="accordion" id="accordion2">
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        Collapsible Group Item #1
-      </a>
-    </div>
-    <div id="collapseOne" class="accordion-body collapse in">
-      <div class="accordion-inner">
-        Anim pariatur cliche...
-      </div>
-    </div>
-  </div>
-  </div>
+        <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseOne"> List </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner">Anim pariatur cliche...</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="section3">
-        <h1>Section 3</h1>
+    <section id="dev">
+        <h1>Programming</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     </section>
-
+<div class="row-fluid">
+    <div class="span12">
+        {{ content }}
+    </div>
+</div>
+<br />
 </body>
