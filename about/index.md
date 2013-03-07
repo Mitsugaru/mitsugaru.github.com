@@ -4,6 +4,14 @@ layout: about
 ---
 ----
 
+#Shout Out
+
+- [Mojang](http://mojang.com/)
+- [Bukkit](http://bukkit.org/)
+- [Mine-RP](http://www.mine-rp.net/)
+
+----
+
 #Credits
 
 ### Tools:
@@ -24,8 +32,10 @@ layout: about
   - [@acesubido](https://twitter.com/acesubido)
 - [Social Web Icons](http://www.zurb.com/playground/social-webicons)
   - [FairheadCreative](http://fairheadcreative.com)
+- [Glyphicons](http://glyphicons.com/)
 
 ### References:
 
 - [Learning Jekyll By Example](http://www.andrewmunsell.com/tutorials/jekyll-by-example/)
 - [The Big Badass List of Twitter Bootstrap resources](http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources)
+- [Lost Decade Games](http://www.lostdecadegames.com/)
