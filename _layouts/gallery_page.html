@@ -1,11 +1,11 @@
 {% include header.html %}
 {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-<script src="{{relative}}js/jquery-1.8.18.custom.min.js"></script>
-<script src="{{relative}}js/jquery.smooth-scroll.min.js"></script>
-<script src="{{relative}}js/lightbox.js"></script>
-<link href="{{relative}}css/lightbox.css" rel="stylesheet" />
-<link href="{{relative}}css/screen.css" rel="stylesheet" />
+<script src="/js/jquery-1.8.18.custom.min.js"></script>
+<script src="/js/jquery.smooth-scroll.min.js"></script>
+<script src="/js/lightbox.js"></script>
+<link href="/css/lightbox.css" rel="stylesheet" />
+<link href="/css/screen.css" rel="stylesheet" />
 <style TYPE="text/css">
 .gallery-image-wrapper {
 	height: 300px;
