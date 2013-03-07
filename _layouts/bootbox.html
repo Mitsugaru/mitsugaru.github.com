@@ -1,7 +1,9 @@
 {% include header.html %}
 <body>
+{% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 <p>Content here. <a class="alert" href=#>Alert!</a></p>
-<script src="bootbox.min.js"></script>
+<script src="{{relative}}js/bootbox.min.js"></script>
     <script>
         $(document).on("click", ".alert", function(e) {
             bootbox.alert("Hello world!", function() {
