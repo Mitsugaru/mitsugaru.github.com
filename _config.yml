@@ -16,3 +16,13 @@ paginate: 15
 markdown: rdiscount
 permalink: pretty
 pygments: true
+
+author_ids: [vincent]
+authors:
+    vincent:
+        display_name: Vincent Deloso
+        gravatar: 5ed6fc41ebf7d88590a4c07eae074e97
+        email: mitsugaru@gmail.com
+        web: http://www.dakanilabs.com
+        twitter: tokume
+        github: mitsugaru
