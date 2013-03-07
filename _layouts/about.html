@@ -4,7 +4,7 @@ layout: default
 <div class="row-fluid">
     <div class="span12">
         <h1>{{ page.title }}</h1>
-        <br />
+        <hr />
     </div>
 </div>
 <body data-spy="scroll" data-target=".subnav" data-offset="100">
@@ -20,28 +20,24 @@ layout: default
     </div>
 
     <section id="music">
-        <h1>Music</h1>
+        <h3>Music</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
     </section>
 
     <section id="vg">
-        <h1>Video Games</h1>
+        <h3>Video Games</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-        <p>
-            <a class="btn" data-toggle="collapse" data-target="#viewdetails">View details
-                &raquo;</a>
-        </p>
-        <p class="collapse" id="viewdetails">Donec id elit non mi porta gravida at eget metus.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-            massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed
-            odio dui.</p>
+        <div class="span4 collapse-group">
+            <p><a class="btn" data-toggle="collapse" data-target="#vglist">Video Game List &raquo;</a></p>
+           <p class="collapse" id="vglist">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
     </section>
 
     <section id="dev">
-        <h1>Programming</h1>
+        <h3>Programming</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     </section>
