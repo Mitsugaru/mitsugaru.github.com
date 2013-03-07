@@ -2,7 +2,7 @@
 layout: default
 ---
 {% capture photolvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
-{% capture photorelative %}{% for i in (2..photolvl) %}../{% endfor %}{% endcapture %}
+{% capture photorelative %}{% for i in (1..photolvl) %}../{% endfor %}{% endcapture %}
 <link href="{{ photorelative }}css/lightbox.css" rel="stylesheet" />
 <link href="{{ photorelative }}css/screen.css" rel="stylesheet" />
 <script type="text/javascript" src="{{ photorelative }}js/jquery-ui-1.8.18.custom.min.js"></script>
