@@ -30,8 +30,11 @@ layout: default
         <h1>Video Games</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
             euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-            <button id="vgbutton" type="button" class="btn btn-primary" data-toggle="button">Show List</button>
- 
+        <button type="button" class="btn btn-primary" data-toggle="button">Show List
+            &raquo;</button>
+        <p class="collapse">Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
+            amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
     </section>
 
     <section id="dev">
@@ -45,8 +48,15 @@ layout: default
     <br />
     <script src="bootbox.min.js"></script>
     <script>
-        $("#vgbutton").on("click", ".alert", function(e) {
-            bootbox.alert("Hello world!");
-        });
-    </script>
+					$('.row .btn').on(
+							'click',
+							function(e) {
+								e.preventDefault();
+								var $this = $(this);
+								var $collapse = $this
+										.closest('.collapse-group').find(
+												'.collapse');
+								$collapse.collapse('toggle');
+							});
+				</script>
 </body>
