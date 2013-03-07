@@ -1,6 +1,22 @@
 <h3>Recent Posts</h3>
 <ul>
     {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li> {% endfor %}
 </ul>
+<div class="accordion" id="services">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                href="#collapseOne"> Services </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">Anim pariatur cliche...</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                href="#collapseTwo"> Minecraft </a>
+        </div>
+    </div>
+</div>
