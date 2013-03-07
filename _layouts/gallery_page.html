@@ -2,12 +2,12 @@
 layout: default
 ---
 {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
-{% capture relative %}{% for i in (2..lvl) %}../{% endfor %}{% endcapture %}
-<link href="{{ relative }}css/lightbox.css" rel="stylesheet" />
-<link href="{{ relative }}css/screen.css" rel="stylesheet" />
-<script type="text/javascript" src="{{ relative }}js/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="{{ relative }}js/jquery.smooth-scroll.min.js"></script>
-<script type="text/javascript" src="{{ relative }}js/lightbox.js"></script></body>
+{% capture photorelative %}{% for i in (2..lvl) %}../{% endfor %}{% endcapture %}
+<link href="{{ photorelative }}css/lightbox.css" rel="stylesheet" />
+<link href="{{ photorelative }}css/screen.css" rel="stylesheet" />
+<script type="text/javascript" src="{{ photorelative }}js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="{{ photorelative }}js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="{{ photorelative }}js/lightbox.js"></script></body>
 <style TYPE="text/css">
 .gallery-image-wrapper {
 	height: 300px;
