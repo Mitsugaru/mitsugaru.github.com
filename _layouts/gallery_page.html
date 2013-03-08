@@ -1,6 +1,6 @@
 {% include header.html %}
 {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{%endcapture %}
-{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+{% capture relative %}{% for i in (2..lvl) %}../{% endfor %}{% endcapture %}
 <link href="{{ relative }}css/lightbox.css" rel="stylesheet" />
 <style>
 body {
@@ -27,6 +27,7 @@ body {
 </style>
 <body>
     <div id="wrap" class="container">{% include navbar.html %}</div>
+    <div id="wrap" class="container">
     <div class="row-fluid">
         <div class="span2">{% include sidebar.html %}</div>
         <div class="span10">
