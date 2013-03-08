@@ -1,6 +1,5 @@
 {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
-{% capture relative %}{% for i in (0..lvl) %}../{% endfor %}{% endcapture %}
-<script type="text/javascript" src="{{ relative }}js/jquery-1.8.0.min.js"></script>
+{% capture relative %}{% for i in (2..lvl) %}../{% endfor %}{% endcapture %}
 <script type="text/javascript" src="{{ relative }}js/jquery-ui-1.8.18.custom.min.js"></script>
 <script type="text/javascript" src="{{ relative }}js/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="{{ relative }}js/lightbox.js"></script>
