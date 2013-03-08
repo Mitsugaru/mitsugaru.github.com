@@ -1,10 +1,7 @@
----
-layout: page
----
-{% capture photolvl %}{{ page.url | append:'index.html' | split:'/' | size}}
-{% endcapture %} {% capture photorelative %}{% for i in (1..photolvl) %}../{% endfor %}{%endcapture %}
+--- layout: default --- {% capture photolvl %}{{ page.url | append:'index.html' | split:'/' | size}}
+{% endcapture %} {% capture photorelative %}{% for i in (1..photolvl) %}../{% endfor %}{%endcapture
+%}
 <link href="{{ photorelative }}css/lightbox.css" rel="stylesheet" />
-<link href="{{ photorelative }}css/screen.css" rel="stylesheet" />
 <style TYPE="text/css">
 .gallery-image-wrapper {
 	height: 300px;
@@ -24,13 +21,21 @@ layout: page
 	max-width: 100%;
 }
 </style>
-<h1>
-    <a href="/{{ site.gallery_dir }}">{{ page.title }}</a>
-</h1>
-<hr />
-{% for image in page.images %}
-<div class="gallery-image-wrapper">
-    <a href="{{ image }}" rel="lightbox"><img src="thumbs/{{ image }}" />{{ image }}</a>
+
+<div id="wrap" class="container">
+    <div class="row-fluid">
+        <div class="span2">{% include sidebar.html %}</div>
+        <div class="span10">
+            <h1>{{ page.title }}</h1>
+            <hr />
+            <hr />
+            {% for image in page.images %}
+            <div class="gallery-image-wrapper">
+                <a href="{{ image }}" rel="lightbox"><img src="thumbs/{{ image }}" />{{ image
+                    }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-{% endfor %}
 {% include gallery-footer.html %}
