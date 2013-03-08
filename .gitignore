@@ -1,6 +1,7 @@
 /.settings
 /.classpath
 /.project
+/_site
 update.sh
 .DS_Store
 Thumbs.db
