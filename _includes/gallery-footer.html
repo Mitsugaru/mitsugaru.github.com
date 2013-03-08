@@ -1,5 +1,5 @@
 {% capture photolvl %}{{ page.url | append:'index.html' | split:'/' | size}}
-{% endcapture %} {% capture photorelative %}{% for i in (1..photolvl) %}../{% endfor %}{%endcapture %}
+{% endcapture %} {% capture photorelative %}{% for i in (3..photolvl) %}../{% endfor %}{%endcapture %}
 <script type="text/javascript" src="{{ relative }}js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="{{ photorelative }}js/jquery-ui-1.8.18.custom.min.js"></script>
 <script type="text/javascript" src="{{ photorelative }}js/jquery.smooth-scroll.min.js"></script>
