@@ -23,8 +23,8 @@
 }
 /* line 24, ../sass/lightbox.sass */
 #lightbox img {
-	max-width: 70%;
-    max-height: 70%;
+	max-width: 970px;
+	max-height: 520px;
 	width: auto;
 	height: auto;
 }

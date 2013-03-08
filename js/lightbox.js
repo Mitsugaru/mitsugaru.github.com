@@ -216,7 +216,19 @@ lightbox = new Lightbox options
     Lightbox.prototype.sizeContainer = function(imageWidth, imageHeight) {
       var $container, $lightbox, $outerContainer, containerBottomPadding, containerLeftPadding, containerRightPadding, containerTopPadding, newHeight, newWidth, oldHeight, oldWidth,
         _this = this;
-      var maxWidth = 0.8, maxHeight = 0.8;
+      maxW = imageWidth / imageHeight * 520;
+      maxH = imageHeight / imageWidth * 970;
+
+      if (imageWidth > 970 || imageHeight > 520) {
+      if (maxW > 970) {
+      imageHeight = maxH;
+      imageWidth = 970;
+      }
+      else {
+      imageHeight = 520;
+      imageWidth = maxW;
+      }
+      }
       $lightbox = $('#lightbox');
       $outerContainer = $lightbox.find('.lb-outerContainer');
       oldWidth = $outerContainer.outerWidth();
@@ -228,20 +240,6 @@ lightbox = new Lightbox options
       containerLeftPadding = parseInt($container.css('padding-left'), 10);
       newWidth = imageWidth + containerLeftPadding + containerRightPadding;
       newHeight = imageHeight + containerTopPadding + containerBottomPadding;
-      if (imageWidth > $(document).width() * maxWidth || imageHeight > $(document).height() * maxHeight) {
-    	  if (imageWidth / imageHeight > $(document).width() / $(document).height()) {
-    	    imageHeight = (imageHeight / imageWidth) * $(document).width() * maxWidth;
-    	    imageWidth = $(document).width() * maxWidth;
-    	  }
-    	  else if (imageWidth / imageHeight < $(document).width() / $(document).height()) {
-    	    imageWidth = (imageWidth / imageHeight) * $(document).height() * maxHeight;
-    	    imageHeight = $(document).height() * maxHeight;
-    	  }
-    	  else {
-    	    imageWidth = $(document).width() * maxWidth;
-    	    imageHeight = $(document).height() * maxHeight;
-    	  }
-    	}
       if (newWidth !== oldWidth && newHeight !== oldHeight) {
         $outerContainer.animate({
           width: newWidth,
