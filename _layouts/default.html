@@ -1,6 +1,12 @@
 {% include header.html %}
-<div class="row-fluid">
-    <div class="span2">{% include sidebar.html %}</div>
-    <div class="span10">{{ content }}</div>
+<style>
+body {
+	padding-top: 70px;
+}
+</style>
+<body>
+<div id="wrap" class="container">
+{% include navbar.html %}
 </div>
+{{ content }}
 {% include footer.html %}

@@ -1,0 +1,130 @@
+---
+title: About Me
+layout: page
+---
+
+<div class="authors">
+    {% for author_id in site.author_ids %} {% assign author = site.authors[author_id] %}
+    <div id="{{ author_id }}" class="author">
+        <div class="row-fluid">
+            <div class="span10">
+                <h3>{{ author.display_name }}</h3>
+                <h6>{{ author.job_title }}</h6>
+                <p>{{ author.bio }}</p>
+            </div>
+            <div class="span2">
+                <img class="avatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=150"
+                    alt="{{ author.display_name }}" width="150" height="150">
+            </div>
+        </div>
+        <ul>
+            <li>Twitter: <a href="https://twitter.com/#!/{{ author.twitter }}">@{{
+                    author.twitter }}</a>
+            </li>
+            <li>Web: <a href="{{ author.web }}">{{ author.web }}</a>
+            </li>
+        </ul>
+    </div>
+    <br /> {% endfor %}
+</div>
+<body data-spy="scroll" data-target=".subnav" data-offset="100">
+    <h1>Interests</h1>
+    <hr />
+    <div class="container">
+        <div class="subnav">
+            <ul class="nav nav-pills">
+                <li><a href="#music">Music</a></li>
+                <li><a href="#vg">Video Games</a></li>
+                <li><a href="#dev">Programming</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="music">
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+    </section>
+
+    <section id="vg">
+        <h3>Video Games</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div class="span10 collapse-group">
+            <p>
+                <a class="btn" data-toggle="collapse" data-target="#vglist">Video Game List
+                    &raquo;</a>
+            </p>
+            <p class="collapse" id="vglist">Donec id elit non mi porta gravida at eget metus.
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+                euismod. Donec sed odio dui.</p>
+        </div>
+    </section>
+
+    <section id="dev">
+        <h3>Programming</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+    </section>
+</body>
+
+<h1>Shout Out</h1>
+<hr />
+
+<ul>
+    <li><a href="http://mojang.com/">Mojang</a></li>
+    <li><a href="http://bukkit.org/">Bukkit</a></li>
+    <li><a href="http://www.mine-rp.net/">Mine-RP</a></li>
+</ul>
+
+<h1>Credits</h1>
+<hr />
+
+<h3>Tools:</h3>
+
+<ul>
+    <li><a href="https://github.com/mojombo/jekyll">Jekyll</a></li>
+    <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+    <li><a href="https://github.com/">GitHub</a></li>
+    <li><a href="http://jenkins-ci.org/">Jenkins</a></li>
+    <li><a href="https://gist.github.com/thomaspark/4394162">Subnav for Bootstrap 2</a></li>
+    <li><a href="https://github.com/CWSpear/twitter-bootstrap-hover-dropdown">Twitter
+            Bootstrap Hover Dropdown</a></li>
+    <li><a href="https://github.com/ggarron/jekyll-gallery-generator">Jekyll Gallery
+            Generator</a></li>
+    <li><a href="http://bootboxjs.com/">Bootbox.js</a></li>
+</ul>
+
+
+<h3>Resources:</h3>
+
+<ul>
+    <li><a href="http://game-icons.net/">Game Icons</a></li>
+    <li><a href="http://ace-subido.github.com/css3-microsoft-metro-buttons/index.html">Microsoft
+            Metro Buttons</a>
+
+        <ul>
+            <li><a href="https://twitter.com/acesubido">@acesubido</a></li>
+        </ul></li>
+    <li><a href="http://www.zurb.com/playground/social-webicons">Social Web Icons</a>
+
+        <ul>
+            <li><a href="http://fairheadcreative.com">FairheadCreative</a></li>
+        </ul></li>
+    <li><a href="http://glyphicons.com/">Glyphicons</a></li>
+</ul>
+
+
+<h3>References:</h3>
+
+<ul>
+    <li><a href="http://www.andrewmunsell.com/tutorials/jekyll-by-example/">Learning Jekyll
+            By Example</a></li>
+    <li><a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources">The
+            Big Badass List of Twitter Bootstrap resources</a></li>
+    <li><a href="http://www.lostdecadegames.com/">Lost Decade Games</a></li>
+</ul>
+<br />
